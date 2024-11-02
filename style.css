@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+p {
+    font-size: 1rem;  /* 13px */
+    line-height: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.main-container {
+    width: 900px;
+    margin: 0 auto;
+}
+
+/* button */
+.btn {
+    padding: 1rem 1.5rem;
+    background-color: rgb(235, 234, 236);
+    border: 1.5px solid black;
+    cursor: pointer;
+}
+
+/* title */
+.pre-title {
+    text-transform: uppercase;
+    letter-spacing: 0.5rem;
+    color: grey;
+    position: relative;
+    padding-left: 40px;
+    width: fit-content;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.pre-title ::before {
+    content: "";
+    width: 20px;
+    height: 1px;
+    background: black;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+/* logo dan navbar menu */
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.4rem 7%;
+    transition: 0.2s ease-in-out;
+}
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.logo {
+    display: flex;
+    font-weight: 800;
+    font-size: 2rem;
+    margin-left: 3rem;
+    top: 0;
+}
+
+.logo a {
+    color: black;
+}
+
+nav ul li a {
+    color: black;
+    display: inline-block;
+    font-size: 0.9rem;
+    margin: 0 0.3rem;
+}
+
+/* Home Section */
+#home {
+    height: 600px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.home-name {
+    font-size: 2rem;
+    font-weight: 600;
+    margin: 0.5rem 0 1rem;
+    color: rgb(6, 6, 69);
+}
+
+.home-right img {
+    width: 150px;
+    border-radius: 0.7rem;
+}
+
+.home-right {
+    display: flex;
+    justify-content: center;
+}
+
+section {
+    padding-left: 3rem;
+    padding-bottom: 5rem;
+}
+
+/* About Section */
+#about {
+    background-color: rgb(235, 234, 236);
+    padding: 3rem 0;
+}
+
+.section-title-about {
+    text-align: center;
+    margin: 3rem 0 4rem;
+}
+
+/* layout */
+.grid-3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.about {
+    padding: 3rem 2re;
+    justify-content: space-between;
+    text-align: center;
+    background: black;
+    border-radius: 0.7rem;
+}
+
+.about h4 {
+    color: white;
+    margin: 0.5rem 0;
+}
+
+.about p {
+    color: white;
+}
+
+.about-icon {
+    background-color: rgb(225, 225, 243);
+    width: fit-content;
+    margin: 0 auto;
+    padding: 1rem 1.3rem;
+    border-radius: 0.5rem;
+}
+/* End of About  */
+
+/* Skills & Experience */
+#skills {
+    padding: 3rem 0;
+    background: white;
+}
+
+.section-title-about {
+    text-align: center;
+    margin: 1rem 0 5rem;
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 7rem;
+}
+
+.experience {
+    display: flex;
+    gap: 7rem;
+}
+
+.experience line {
+    padding: 0 5rem;
+}
+
+.experience .line div {
+    width: 2px;
+    height: 40%;
+    background: black;
+    position: absolute;
+}
+
+.experience-info {
+    margin: 3rem 0;
+}
+
+.experience-date {
+    margin-bottom: 3rem;
+}
+
+.experience .line div::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: black;
+    border-radius: 100%;
+    position: absolute;
+    left: -7px;
+}
+
+.skills-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 1.5rem;
+}
+
+.skills-right {
+    line-height: 2rem;
+    padding: 0 1rem;
+}
+
+/* End of Experience & Skills */
+
+/* Contact section */
+
+#contact {
+    padding: 7rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    font-family: "Roboto", sans-serif;
+    background: white;
+    border: 1px solid gainsboro;
+    border-radius: 3px;
+    resize: none;
+}
+
+.contact {
+    margin-bottom: 1.4rem;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+    outline: none;
+    border: 1px solid gray;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 0.75rem 1.3rem;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+
+.btn-submit:hover {
+    background-color: rgb(225, 225, 243);
+    color: black;
+}
+/* End of Contact */
+
+/* Footer Section */
+footer {
+    margin-bottom: 0;
+    padding: 4rem 0;
+    background: rgb(235, 234, 236);
+    text-align: center;
+}
+
+.footer-icons {
+    margin-bottom: 1rem;
+}
+
+.footer-icons a {
+    margin: 0 0.5rem;
+}
+
+.footer-icons a:hover {
+    fill: black;
+}
+
+.footer-icons {
+    fill:grey
+}
